@@ -1,1 +1,2 @@
-# Ejercicios-Python-22-23
+# Ejercicios de python 2022-2023
+## Bachillerato 2º
