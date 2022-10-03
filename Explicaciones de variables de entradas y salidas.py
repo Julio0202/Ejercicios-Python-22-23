@@ -16,6 +16,7 @@ nombre = ""
 #Entrada y salida de datos 
 #Salida con print
 #Entrada de datos - - input
-nombre = input("Dime tu nombre:\n")
+nombre = input("Dime tu nombre:\n") #el \n hace un salto de linea 
 edad = input("Dime tu edad:\n")
 print ("Buenos días", nombre, "tu edad es", edad)
+
