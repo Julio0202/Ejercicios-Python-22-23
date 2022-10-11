@@ -13,4 +13,4 @@ vNomb = []
 vTelf = []
 vNomb.append(input("Dime un nombre: "))
 vTelf.append(input("Dime un telefono: "))
-print(vNomb, vTelf)
+print("El telefono de", vNomb.pop(),"es",vTelf.pop())
