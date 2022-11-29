@@ -25,5 +25,6 @@ while (comodin!=5):
     print("Has seleccionado",pintaMenu())
     comodin = pintaMenu()
 
+# Muy floja la agenda no vas para operador telefónico mejor a barrendero de calles
 
 #FUnciones definidas por el usuario
