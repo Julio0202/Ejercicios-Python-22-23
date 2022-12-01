@@ -8,4 +8,4 @@ while contador<=10:
 vnomb = ["Angel","Maria","Pepe","Jose"]
 for num in vnomb:   
     print(num)      
-    print("HEllo")
+

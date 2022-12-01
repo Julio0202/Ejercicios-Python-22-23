@@ -11,7 +11,6 @@ def descargarLista(url:str):
     for cancion in playlist.videos:
         cancion.streams.get_audio_only().download("Canciones")
         print("Descargando cancion:", cancion.author)
-        
 
 url = "https://www.youtube.com/watch?v=HKNz0DWQXZw&list=PLVwXkzK42QWrWyeunQ_hi4OM8iUrBWUlq"
 descargarLista(url)

@@ -5,20 +5,27 @@ vlistas = []
 usuario = ""
 contrasena = ""
 confirmarcontra = ""
+genero = ""
+
+
 def guardarDatos():
     usuario = entry_nombre_usuario.get()
     contrasena = entry_pass_usuario.get()
     confirmarcontra = entry_repite_pass_usuario.get()
+    genero = combo.get()
     if contrasena == confirmarcontra:
         vlistas.append(usuario)
         vlistas.append(contrasena)
+        vlistas.append(genero)
         entry_nombre_usuario.delete(0,len(usuario))
         entry_pass_usuario.delete(0,len(contrasena))
         entry_repite_pass_usuario.delete(0,len(confirmarcontra)) 
-        messagebox.showinfo("Usuario Guardado", f"Usuario {usuario} guardado")
+        messagebox.showinfo("Usuario Guardado", f"Usuario {vlistas} guardado")
 def listasDatos():
     print(vlistas)
 
+
+    
 
 
 
@@ -54,10 +61,14 @@ entry_pass_usuario.grid(row=2,column=1, pady=10)
 label_repite_pass_usuario.grid(row=3,column=0, pady=10, padx=15)
 entry_repite_pass_usuario.grid(row=3,column=1, pady=10)
 
-boton_guardar.grid(row=5,column=0, pady=10)
-boton_salir.grid(row=5,column=1, pady=10)
+boton_guardar.grid(row=7,column=0, pady=10)
+boton_salir.grid(row=7,column=1, pady=10)
 
-
+combolabel = ttk.Label(ventana,text="Dime tu genero")
+combolabel.grid(row=6,column=0,pady=10)
+combo_sexo = ttk.Combobox(ventana,values=["Masculino","Femenino"])
+combo_sexo.set("SEXO")
+combo_sexo.grid(row=6, column=1, pady=10)
 
 
 
