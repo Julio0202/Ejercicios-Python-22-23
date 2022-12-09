@@ -24,5 +24,7 @@ def main(page: f.Page):
 
     slider_edad=f.Slider(min=0,max=120,divisions=120,label="Edad{value}")
     page.add(slider_edad)
-
+    #Crear fila
+    fila = f.Row(controls=[textField_Nombre,dropDown_Menu])
+    page.add(fila)
 f.app(target=main)
