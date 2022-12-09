@@ -9,7 +9,7 @@ def main(page: f.Page):
     #Componente texto 
     t = f.Text(value="Introducción a Flet", color="blue",size=66)
     page.add(t) #Add hace dos cosas 1- Añadir 2- Actualizar
-    t.value="Cambiando los datos"
+    t.value="FLET < TKINTER, FACTS"
     page.update()
     #Actualiza los datos: page.update()
     #Componente boton
@@ -21,5 +21,8 @@ def main(page: f.Page):
     page.add(dropDown_Menu)
     dropDown_Menu.options.append(f.dropdown.Option("Nueva"))
     page.update()
+
+    slider_edad=f.Slider(min=0,max=120,divisions=120,label="Edad{value}")
+    page.add(slider_edad)
 
 f.app(target=main)
