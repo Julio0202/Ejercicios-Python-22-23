@@ -23,7 +23,7 @@ def main(page: f.Page):
         tfrutas_cantidad_slider.value = 0
         dropDown_Menu_carne.value = ""
         tcarne_cantidad_slider.value = 0
-        
+
         
         page.update()
 
@@ -45,7 +45,7 @@ def main(page: f.Page):
     page.add(tfrutas)
     dropDown_Menu_frutas = f.Dropdown(width=300,options=[f.dropdown.Option("Peras")],label="Frutas")
     page.add(dropDown_Menu_frutas)
-    page.add(f.Image(src=f"https://images.ecestaticos.com/Ga4J0tnBfGQNs25wDMmWOHnaThE=/1x110:2120x1302/1200x675/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Ffa0%2Ff15%2Fc6a%2Ffa0f15c6a31a2eed9a19d7cba2c8b6d9.jpg",width=500,height=500))
+    page.add(f.Image(src=f"https://images.ec2estaticos.com/Ga4J0tnBfGQNs25wDMmWOHnaThE=/1x110:2120x1302/1200x675/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Ffa0%2Ff15%2Fc6a%2Ffa0f15c6a31a2eed9a19d7cba2c8b6d9.jpg",width=500,height=500))
     dropDown_Menu_frutas.options.append(f.dropdown.Option("Manzana"))
     dropDown_Menu_frutas.options.append(f.dropdown.Option("Naranjas"))
     dropDown_Menu_frutas.options.append(f.dropdown.Option("Fresas"))
